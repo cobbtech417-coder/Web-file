@@ -1,6 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body {
+	background-color: powderblue;
+	font-family: Arial;
+	color: black;
+	text-align: center;
+	}
+header {
+	background-color: tomato;
+	color: white;
+	text-align: center;
+	padding: 50px;
+	}
+h1 {
+	color: navy;
+	font-size:36;
+	}
+p{
+	font-size: 18px;
+	}
+img{
+	width: 200px;
+	border-radius: 50%;
+	border: 3px solid green;
+	mar-gin-top:20px;
+	}
+.table-style1{
+	width: 80%;
+	margin: 20px auto;
+	border: 2px solid navy;
+	}
+.table-style1 th, .table-style1 td {
+	border: 1px solid navy;
+	padding: 10px;
+	text-align: center;
+	}
+.table-style1 th {
+	background-color: lightblue;
+	}
+.table-style2 {
+	width: 60%;
+	border-collapse: collapse;
+	border: 2px solid darkgreen;
+	padding: 10px;
+	}
+.table-style2 th, .table-style2 td {
+	border: 1px solid darkgreen;
+	padding: 10px;
+	text-align: center;
+	}
+.table-style2 th {
+	background-color: lightgreen;
+	}
+.about    {
+	width: 60%;
+	margin: 20px auto;
+	text-align: left;
+	}
+div.mycontainer {
+	width: 66%;
+	overflow: auto;
+	}
+div.mycontainer div {
+	width: 50%;
+	float: left;
+	}
+.video {
+	width: 66%;
+	margin: 10px auto;
+	text-align: center;
+	border: 22px solid green;
+	}
+.list-style1 {
+	list-style-type: square;
+	color: darkblue;
+	text-align: left;
+	Margin: 20px;
+	}
+.list-style2 {
+	list-style-type: circle;
+	color: darkgreen;
+	text-align: left;
+	margin: 20px;
+	}
+</style>
   <title>My Personal Webpage</title>
 </head>
 <body>
@@ -13,16 +98,16 @@ Age: 44
 Location: Kansas City
 </pre>
 </header>
-<section>
+<section class= "about">
 <p>Check out my favorite website:
 <a href="https://academy.networkchuck.com/"target="_blank">Network Chuck Academy</a>
 </p>
 <a href="mailto:cobbtech417@gmail.com"target="_blank">cobbtech417@gmail.com</a>
-<a href="https://www.linkedin.com/in/jason-cobb-84a439397/" target="_blank">
-<img src="https://github.com/cobbtech417-coder/Web-file/blob/main/WIN_20251117_10_17_25_Pro.jpg?raw=true" alt="B2T pic of me">
+<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">
+<img src="https://github.com/cobbtech417-coder/Web-file/blob/main/WIN_20251117_10_17_25_Pro.jpg?raw=true" alt="B2T pic of me" title="See My Linkedin"></a>
 </section>
 <hr><h2>My Hobbies</h2>
-<table>
+<table class="table-style1">
 <tr>
 <th>Hobby</th>
 <th>Hours/Week</th>
@@ -37,7 +122,7 @@ Location: Kansas City
 </tr>
 </table>
 <h2>My Favorite Movies</h2>
-<table>
+<center><table class="table-style2">
 <tr>
 <th>Movie</th>
 <th>Year</th>
@@ -50,24 +135,32 @@ Location: Kansas City
 <td>Inception</td>
 <td>2010</td>
 </tr>
-</table>
+</table></center>
+<div class= "mycontainer">
+<div>
 <h2>My Favorite Foods</h2>
-<ul>
+<ul class="list-style1">
 <li>Burritos</li>
 <li>Chinese</li>
 <li>Cheese Bugers</li>
 </ul>
+</div>
+<div>
 <h2>My Favorite Drinks</h2>
-<ul>
+<ul class="list-style2">
 <li>Mountain Dew</li>
 <li>CranGrape</li>
 <li>Lemon Tea</li>
 </ul>
-<section>
+</div>
+</div>
+<section class="video">
 <h2>My Favorite Video</h2>
 <video width="480" height="360" controls>
 <source src="https://github.com/cobbtech417-coder/Web-file/blob/main/Download%20(1).mp4?raw=True">
 Your browser does not support the video tag.
 </video>
+</section>
 </body>
 </html>
+
