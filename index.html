@@ -85,6 +85,37 @@ div.mycontainer div {
 	text-align: left;
 	margin: 20px;
 	}
+.button-transition{
+  background-color: navy;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cusor: pointer;
+}
+.button-transition:hover{
+  background-color: darkorange;
+}
+.flex-container {
+	display:flex;
+	justify-content: space-around;
+	background-color: lightgray;
+	padding: 20px;
+	width: 30%;
+	text-align: center;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 10px;
+	background-color: #f8f8f8;
+	padding: 10px;
+}
+.grid-item {
+	background-color: #4CAF50;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
 </style>
   <title>My Personal Webpage</title>
 </head>
@@ -98,7 +129,7 @@ Age: 44
 Location: Kansas City
 </pre>
 <a href="test.html" style="color:black";target="_blank";>
-<button>New Page Link</button></a>
+<button class="button transition">New Page Link</button></a>
 </header>
 <section class= "about">
 <p>Check out my favorite website:
@@ -163,6 +194,40 @@ Location: Kansas City
 Your browser does not support the video tag.
 </video>
 </section>
+<form style="margin-top: 30px;">
+<lable for="email">Enter your email:</lable>label>
+<input type="email" name="email"placeholder="you@example.com" required>
+<br>
+<br>
+<lable for="bio">Tell us about yourself:</lable>label>
+<br>
+<textarea id="bio" rows="4" cols="40"></textarea>
+<br>
+<br>
+<input type="submit" value="Submit">
+</form>
+<form>
+	<label for="user">Username:</label>
+	<input type="text" id-"user" name="user" placeholder="Enter your username" required>
+	<br><br>
+	<label for="pass">Password:</label>
+	<input type="password" id="pass" name="pass" placeholder="Enter your password" required>
+	<br><br>
+	<input type="submit" value="Login">
+</form>
+<div class="flex-container">
+	<div class="flex-item">Item 1</div>
+	<div class="flex-item">Item 2</div>
+	<div class="flex-item">Item 3</div>
+</div>
+<div class="grid-container">
+	<div class="grid-item">1</div>
+	<div class="grid-item">2</div>
+	<div class="grid-item">3</div>
+	<div class="grid-item">4</div>
+	<div class="grid-item">5</div>
+	<div class="grid-item">6</div>
+</div>
 </body>
 </html>
 
